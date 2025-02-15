@@ -1,6 +1,9 @@
 # EdTech Platform
 ## photo
 [Ed tech photo.pdf](https://github.com/user-attachments/files/18810033/Ed.tech.photo.pdf)
+![IMG_20250215_170735](https://github.com/user-attachments/assets/508b732f-3bd2-4fa2-910d-32b01b4e9e61)
+
+
 ## 📌 Project Overview
 This is a full-stack web application designed for an **EdTech platform** that helps students track applications, find matching scholarships, and receive AI-based profile matching.
 
