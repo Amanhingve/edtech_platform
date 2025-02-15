@@ -155,7 +155,8 @@ chmod +x node_modules/.bin/react-scripts
 ## 📜 License
 This project is **open-source** under the MIT License.
 
-![IMG_20250215_163546](https://github.com/user-attachments/assets/83b5117c-9795-4aca-b667-629d8316eb2b)
+
+[Ed tech photo.pdf](https://github.com/user-attachments/files/18810033/Ed.tech.photo.pdf)
 
 
 
