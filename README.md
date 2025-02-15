@@ -103,3 +103,55 @@ chmod +x node_modules/.bin/react-scripts
 ## 📜 License
 This project is **open-source** under the MIT License.
 
+## databases create
+```sh
+CREATE DATABASE edtech_platform;
+USE edtech_platform;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  password VARCHAR(255),
+  role ENUM('student', 'agent', 'admin') NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE scholarships (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    eligibility_criteria TEXT,
+    application_deadline DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    major VARCHAR(255),
+    gpa DECIMAL(3,2),
+    country VARCHAR(100),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT NOT NULL,
+    university VARCHAR(255) NOT NULL,
+    program VARCHAR(255) NOT NULL,
+    status ENUM('pending', 'accepted', 'rejected') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE
+);
+
+CREATE TABLE profiles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_id INT NOT NULL,
+    gpa DECIMAL(3,2),
+    skills TEXT,
+    interests TEXT,
+    preferred_location VARCHAR(255),
+    FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE
+);
+```
