@@ -1,5 +1,6 @@
 # EdTech Platform
-
+## photo
+[Ed tech photo.pdf](https://github.com/user-attachments/files/18810033/Ed.tech.photo.pdf)
 ## 📌 Project Overview
 This is a full-stack web application designed for an **EdTech platform** that helps students track applications, find matching scholarships, and receive AI-based profile matching.
 
@@ -156,7 +157,7 @@ chmod +x node_modules/.bin/react-scripts
 This project is **open-source** under the MIT License.
 
 
-[Ed tech photo.pdf](https://github.com/user-attachments/files/18810033/Ed.tech.photo.pdf)
+
 
 
 
